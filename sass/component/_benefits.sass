@@ -1,0 +1,41 @@
+.benefits
+  padding-top: 94px
+
+  &__list
+    display: flex
+    gap: 30px
+
+  &__item
+    list-style: none
+
+  &__item::before
+    display: block
+    content: ""
+    height: 120px
+    background-color: #f5f4fa
+    background-image: url(../img/hw4/antenna1.svg)
+    background-repeat: no-repeat
+    background-position: center
+    border-radius: 4px
+
+  &__item--clock::before
+    background-image: url(../img/hw4/clock2.svg)
+
+  &__item--planning::before
+    background-image: url(../img/hw4/diagram3.svg)
+
+  &__item--technology::before
+    background-image: url(../img/hw4/astronaut4.svg)
+
+  &__tittle
+    color: #212121
+    font-size: 14px
+    line-height: 1.14
+    letter-spacing: 0.03em
+    text-transform: uppercase
+    margin-bottom: 10px
+    margin-top: 30px
+
+  &__desc
+    color: #757575
+    line-height: 1.71
