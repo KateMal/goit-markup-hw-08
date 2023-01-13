@@ -5,7 +5,10 @@
 .filtr-list
   display: flex
   gap: 8px
-  justify-content: center
+  justify-content: flex-start
+  flex-wrap: wrap
+  @media ( min-width: 768px )
+    justify-content: center
 
   &__item
     list-style: none

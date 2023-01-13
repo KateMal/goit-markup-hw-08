@@ -9,14 +9,26 @@
     text-align: center
     color: #212121
 
+  &__list
+    display: flex
+    gap: 30px
+    flex-wrap: wrap
+
   &__item
     list-style: none
+    width: calc((100% - 30px) / 2)
+
+    @media ( min-width: 768px )
+      width: calc((100% - 60px) / 3)
+
+    @media ( min-width: 1600px )
+      width: calc((100% - 150px) / 6)
 
   &__link
     border-radius: 4px
     color: #afb1b8
     border: 1px solid #afb1b8
-    width: 170px
+    // width: 170px
     height: 92px
     display: grid
     place-items: center
@@ -25,7 +37,3 @@
     &:hover,&:focus
       border-color: #2196f3
       color: #2196f3
-
-  &__list
-    display: flex
-    gap: 30px

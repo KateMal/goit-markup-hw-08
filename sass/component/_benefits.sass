@@ -2,11 +2,22 @@
   padding-top: 94px
 
   &__list
-    display: flex
+    // display: flex
     gap: 30px
+    display: flex
+    flex-direction: column
+    @media ( min-width: 768px )
+      flex-direction: row
+      flex-wrap: wrap
 
   &__item
     list-style: none
+    width: 100%
+    @media ( min-width: 768px )
+      width: calc((100% - 30px) / 2)
+
+    @media ( min-width: 1600px )
+      width: calc((100% - 90px) / 4)
 
   &__item::before
     display: block
