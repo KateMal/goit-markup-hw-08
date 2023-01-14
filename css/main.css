@@ -144,6 +144,9 @@ body {
 }
 
 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #2196f3;
   text-decoration: none;
   font-family: "Raleway";
@@ -151,6 +154,12 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-right: 94px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .logo__select {
   color: #000000;
@@ -160,7 +169,7 @@ body {
 }
 .logo--footer {
   margin-bottom: 28px;
-  display: block;
+  margin-right: 0;
 }
 
 .nav {
@@ -238,9 +247,18 @@ body {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14f;
+  line-height: 1.14;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .social__item {
   list-style: none;
@@ -652,15 +670,38 @@ body {
   padding-bottom: 60px;
 }
 .footer__contact {
-  margin-right: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
 }
 .footer__social {
   margin-top: 12px;
+  margin-bottom: 60px;
 }
 .footer__elements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .footer .social__link {
   background-color: rgba(255, 255, 255, 0.1);
@@ -697,6 +738,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .footer:focus {
   border-color: #2196f3;
@@ -722,8 +767,15 @@ body {
 }
 
 .contact-form {
-  margin-top: 12px;
   margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .contact-form__email {
   margin-right: 12px;
@@ -742,6 +794,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  margin-bottom: 20px;
 }
 .contact-form__email:focus {
   border-color: #2196f3;
