@@ -3,14 +3,25 @@
   padding-top: 60px
   padding-bottom: 60px
 
+  &__group
+
+    @media ( min-width: 768px )
+      display: flex
+      gap: 165px
+    @media ( min-width: 1600px )
+      gap: 70px
+
   &__contact
     // margin-right: 70px
-    margin-right: auto
-    margin-left: auto
+    // margin-right: auto
+    // margin-left: auto
     display: flex
     flex-direction: column
     align-items: center
     margin-bottom: 60px
+
+    @media ( min-width: 1600px )
+      align-items: flex-start
 
   &__social
     margin-top: 12px
@@ -22,6 +33,11 @@
     justify-content: center
     align-items: center
 
+    @media ( min-width: 1600px )
+      flex-direction: row
+      gap: 94px
+      align-items: baseline
+
   & .social__link
     background-color: rgba(255, 255, 255, 0.1)
     color: #ffffff
@@ -31,13 +47,15 @@
     background-color: #2196f3
 
   &__input-email
-    width: 358px
+    width: 450px
     height: 50px
 
     border: 1px solid rgba(255, 255, 255, 0.3)
-
     border-radius: 4px
     margin-right: 12px
+
+    @media ( min-width: 1600px )
+      width: 358px
 
   &__email-title
     font-family: "Roboto"
@@ -56,6 +74,9 @@
     justify-content: center
     align-items: center
     flex-direction: column
+
+    @media ( min-width: 1600px )
+      flex-direction: row
 
   &:focus
     border-color: #2196f3
@@ -79,8 +100,8 @@
 
 .contact-form
   // margin-top: 12px
-  margin-left: auto
-  margin-right: auto
+  // margin-left: auto
+  // margin-right: auto
   display: flex
   flex-direction: column
 
@@ -102,6 +123,9 @@
     font-size: 16px
     line-height: 1.25
     margin-bottom: 20px
+
+    @media ( min-width: 1600px )
+      margin-bottom: 0
 
     &:focus
       border-color: #2196f3

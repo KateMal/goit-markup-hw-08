@@ -53,18 +53,23 @@ body {
 }
 
 .container--nav {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
+}
+@media (min-width: 1600px) {
+  .container--nav {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .backdrop {
@@ -108,15 +113,22 @@ body {
 }
 .hero__tittle {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  width: 696px;
+  width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+@media (min-width: 1600px) {
+  .hero__tittle {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
 }
 .hero__button {
   background-color: #2196f3;
@@ -144,9 +156,6 @@ body {
 }
 
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #2196f3;
   text-decoration: none;
   font-family: "Raleway";
@@ -179,7 +188,7 @@ body {
   letter-spacing: 0.02em;
   display: none;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -226,6 +235,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .social__link {
   color: #afb1b8;
@@ -304,7 +316,7 @@ body {
   /* padding-bottom: 25px; */
   border: 1px solid #ececec;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .header__flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -314,7 +326,7 @@ body {
             align-items: center;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .header__burger {
     display: none;
   }
@@ -669,9 +681,20 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media (min-width: 768px) {
+  .footer__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 165px;
+  }
+}
+@media (min-width: 1600px) {
+  .footer__group {
+    gap: 70px;
+  }
+}
 .footer__contact {
-  margin-right: auto;
-  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,6 +706,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 60px;
+}
+@media (min-width: 1600px) {
+  .footer__contact {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 .footer__social {
   margin-top: 12px;
@@ -703,6 +733,18 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (min-width: 1600px) {
+  .footer__elements {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 94px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 .footer .social__link {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
@@ -711,11 +753,16 @@ body {
   background-color: #2196f3;
 }
 .footer__input-email {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   margin-right: 12px;
+}
+@media (min-width: 1600px) {
+  .footer__input-email {
+    width: 358px;
+  }
 }
 .footer__email-title {
   font-family: "Roboto";
@@ -743,6 +790,14 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media (min-width: 1600px) {
+  .footer__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 .footer:focus {
   border-color: #2196f3;
 }
@@ -767,8 +822,6 @@ body {
 }
 
 .contact-form {
-  margin-left: auto;
-  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -795,6 +848,11 @@ body {
   font-size: 16px;
   line-height: 1.25;
   margin-bottom: 20px;
+}
+@media (min-width: 1600px) {
+  .contact-form__email {
+    margin-bottom: 0;
+  }
 }
 .contact-form__email:focus {
   border-color: #2196f3;
