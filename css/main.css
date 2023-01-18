@@ -61,7 +61,7 @@ body {
 .container--nav {
   display: none;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .container--nav {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -168,19 +168,23 @@ body {
 }
 
 .logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   color: #2196f3;
   text-decoration: none;
   font-family: "Raleway";
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-right: 94px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (min-width: 768px) {
+  .logo {
+    margin-right: 94px;
+  }
 }
 .logo__select {
   color: #000000;
@@ -297,14 +301,22 @@ body {
 
 .adress {
   list-style: none;
-  display: none;
-  gap: 50px;
+  gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-@media (min-width: 480px) {
+@media (min-width: 1200px) {
   .adress {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 50px;
   }
 }
 .adress__link {
@@ -334,6 +346,18 @@ body {
   /* padding-top: 25px; */
   /* padding-bottom: 25px; */
   border: 1px solid #ececec;
+}
+.header__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media (min-width: 768px) {
   .header__flex {
@@ -1125,6 +1149,11 @@ body {
   margin: 0;
   padding: 0;
   border: none;
+}
+@media (min-width: 768px) {
+  .burger {
+    display: none;
+  }
 }
 .burger__close {
   display: none;

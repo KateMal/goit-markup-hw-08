@@ -1,14 +1,17 @@
 .logo
-  // display: flex
+  display: inline-flex
   color: $accent
   text-decoration: none
   font-family: "Raleway"
   font-size: 26px
   line-height: 1.19
   letter-spacing: 0.03em
-  margin-right: 94px
-  justify-content: center
+
+  // justify-content: center
   align-items: center
+
+  @media ( min-width: 768px )
+    margin-right: 94px
 
   &__select
     color: $black
