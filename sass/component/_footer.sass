@@ -125,7 +125,7 @@
     -webkit-box-shadow: 0px 4px 4px rgb(0 0 0 / 15%)
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%)
     border-radius: 4px
-    width: 358px
+    width: 100%
     max-width: 450px
     font-family: "Roboto"
     font-style: normal
@@ -134,8 +134,12 @@
     line-height: 1.25
     margin-bottom: 20px
 
+    @media ( min-width: 480px )
+      width: 450px
+
     @media ( min-width: 1200px )
       margin-bottom: 0
+      width: 358px
 
     &:focus
       border-color: #2196f3

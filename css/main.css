@@ -937,7 +937,7 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  width: 358px;
+  width: 100%;
   max-width: 450px;
   font-family: "Roboto";
   font-style: normal;
@@ -946,9 +946,15 @@ body {
   line-height: 1.25;
   margin-bottom: 20px;
 }
+@media (min-width: 480px) {
+  .contact-form__email {
+    width: 450px;
+  }
+}
 @media (min-width: 1200px) {
   .contact-form__email {
     margin-bottom: 0;
+    width: 358px;
   }
 }
 .contact-form__email:focus {
@@ -961,7 +967,8 @@ body {
 .modal {
   background-color: #ffffff;
   border-radius: 4px;
-  width: 528px;
+  width: 100%;
+  max-width: 528px;
   position: absolute;
   padding: 8px;
   -webkit-transform: scale(1);
@@ -1157,4 +1164,8 @@ body {
 }
 .burger__close {
   display: none;
+}
+
+.navburger__item {
+  background-color: teal;
 }/*# sourceMappingURL=main.css.map */
