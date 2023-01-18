@@ -24,11 +24,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="page">
     <header class="header">
       <div class="container header__flex">
         <a class="logo" href="">Web<span class="logo__select">Studio</span> </a>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg width="40" height="40">
+            <use class="burger__menu" href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <div class="container--nav">
           <nav class="nav">
             <ul class="nav__list">
@@ -345,5 +356,46 @@
         </form>
       </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu" type="button">
+        <svg width="40" height="40">
+          <use
+            class="burger__menu"
+            href="./img/icons.svg#icon-close_40px"
+          ></use>
+        </svg>
+      </button>
+
+      <ul class="navburger">
+        <li class="navburger__item">
+          <a class="navburger__link" href="./">Студія</a>
+        </li>
+        <li class="navburger__item">
+          <a
+            class="navburger__link navburger__link--active"
+            href="./portfolio.html"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="navburger__item">
+          <a class="navburger__link" href="">Контакти</a>
+        </li>
+      </ul>
+
+      <div class="burgerinform">
+        <p class="burgerinform__tel">+38 096 111 11 11</p>
+        <p class="burgerinform__mail">info@devstudio.com</p>
+
+        <ul class="sosialburger">
+          <li><a>Instagram</a></li>
+          <li><a>Twitter</a></li>
+          <li><a>Facebook</a></li>
+          <li><a>LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
